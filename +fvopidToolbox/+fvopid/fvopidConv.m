@@ -19,7 +19,7 @@ function u = fvopidConv(e, kp, ki, kd, vi, vd, h, N, saturationEnabled, saturati
         
         % Initialize input buffer
         inptuSignalBuffer = zeros(1, N);
-        inptuSignalBuffer(1) = 1;
+        inptuSignalBuffer(1) = 0;
         
         % Initialize step counter
         stepCounter = 1;
